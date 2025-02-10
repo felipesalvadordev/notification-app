@@ -57,6 +57,10 @@ Verify that the email has been sent:
 
 * Check MailHog via the UI http://localhost:8025/
 
+Destroy cloudformation stack
+
+    aws --endpoint-url=http://localhost:4566 cloudformation delete-stack  --stack-name email-infra
+
 Reference: https://docs.localstack.cloud/tutorials/java-notification-app/
 
 
